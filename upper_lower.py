@@ -15,12 +15,17 @@ def stringManipulator(a):
 def indexedForLoop(a):
     new_string = ""
     for index in range(len(a)):
-        if index % 2 == 0:
-            new_string += a[index].upper()
-        else:
-            new_string += a[index].lower()
+        new_string += getCharacterValue(a[index], index)
     print(new_string)
     return new_string
+
+
+def getCharacterValue(c, index):
+        if index % 2 == 0:
+            return c.upper()
+        else:
+            return c.lower()
+
 
 
 def evenLessCode(a):
