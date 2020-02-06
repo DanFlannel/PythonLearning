@@ -66,12 +66,9 @@ def getNamedTuple(b, x):
         return Point(False, 0)
     else:
         return Point(True, x)
-    
-
 
 array = [1,6,7,8,9,1,2,3]
 print(sumation1(array))
 print(summation2Exclusive(array))
 print(summation2Inclusive(array))
-print("...")
 print(summation3(array))
