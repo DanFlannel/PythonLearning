@@ -59,9 +59,9 @@ def getCanAdd(b, x):
 def getNamedTuple(b, x):
     Point = namedtuple('Point', 'canAdd value')
     if(x == 6):
-        return Point(False, 0)
+        return Point(False, 0)  # change the value to 6 to make the 6 inclusive
     elif(x == 9 and b == False):
-        return Point(True, 0)
+        return Point(True, 0)   # change the value to 9 to make the 9 inclusive
     elif(b == False):
         return Point(False, 0)
     else:
